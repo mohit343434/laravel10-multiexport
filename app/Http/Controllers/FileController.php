@@ -15,5 +15,6 @@ class FileController extends Controller
     public function import(Request $request) {
         $uploadedFile = $request->file('uploadfile');
         Excel::import(new MultipleSheetImport(), $uploadedFile);
+        return back();
     }
 }

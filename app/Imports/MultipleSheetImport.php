@@ -14,10 +14,10 @@ class MultipleSheetImport implements WithMultipleSheets
     {
         return [
             new CoreCategoriesImport,
+            new TrainerImport(),
             new CourseImport(),
             new CourseLessonImport(),
-            new TaskImport(),
-            new TrainerImport()
+            new TaskImport()
         ];
     }
 }

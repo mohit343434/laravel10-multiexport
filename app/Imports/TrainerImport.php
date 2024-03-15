@@ -17,6 +17,7 @@ class TrainerImport implements ToModel, WithHeadingRow
     {
         return new Trainer([
             //
+            
             'trainer_uniqueID' => $row['trainer_uniqueid'],
             'name' => $row['name'],
             'email' => $row['email'],

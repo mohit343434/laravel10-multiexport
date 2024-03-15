@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->integer('task_uniqueID')->unsigned()->nullable();
+            $table->string('task_uniqueID')->nullable();
             $table->string('category_name')->nullable();
             $table->string('task_name')->nullable();
             $table->string('task_type')->nullable();

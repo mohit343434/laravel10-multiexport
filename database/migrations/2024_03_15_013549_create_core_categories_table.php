@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('core_categories', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('corecategory_uniqueID')->nullable();
+            $table->string('corecategory_uniqueID')->nullable();
             $table->string('name')->nullable();
             $table->string('thumbnail')->nullable();
             $table->string('color')->nullable();

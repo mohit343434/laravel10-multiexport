@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('course_uniqueID')->nullable();
-            $table->unsignedInteger('corecategory_uniqueID')->nullable();
-            $table->unsignedInteger('trainer_uniqueID')->nullable();
+            $table->string('course_uniqueID')->nullable();
+            $table->string('corecategory_uniqueID')->nullable();
+            $table->string('trainer_uniqueID')->nullable();
             $table->string('name')->nullable();
             $table->string('thumbnail')->nullable();
             $table->string('previewVideo')->nullable();

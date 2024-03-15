@@ -27,6 +27,7 @@ class TaskImport implements ToModel, WithHeadingRow
             'skipped_time'=> $row['skipped_time'],
             'question_type'=> $row['question_type'],
             'point_type'=> $row['point_type'],
+
         ]);
     }
 }

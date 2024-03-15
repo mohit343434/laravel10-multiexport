@@ -27,6 +27,8 @@ class CourseLessonImport implements ToModel, WithHeadingRow
             'duration' => $row['duration'],
             'priority' => $row['priority'],
             'description' => $row['description'],
+
+
         ]);
     }
 }

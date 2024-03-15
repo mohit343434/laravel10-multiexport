@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('trainers', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('trainer_uniqueID')->nullable();
+            $table->string('trainer_uniqueID')->nullable();
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('mobile')->nullable();
             $table->string('avatar')->nullable();
             $table->string('designation')->nullable();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

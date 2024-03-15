@@ -22,7 +22,7 @@ class CourseImport implements ToModel, WithHeadingRow
             'trainer_uniqueID' => $row['trainer_uniqueid'],
             'name' => $row['name'],
             'thumbnail' => $row['thumbnail'],
-            'previewVideo' => $row['previewVideo'],
+            'previewVideo' => $row['preview_video'],
             'description' => $row['description'],
             'duration' => $row['duration'],
             'price' => $row['price'],
